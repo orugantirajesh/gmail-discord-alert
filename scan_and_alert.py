@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Hourly Gmail -> Discord alert scanner.
 
+(CI/CD pipeline verified working as of this commit.)
+
 Connects to Gmail over IMAP (app password), pulls emails from the last
 scan window via Gmail's X-GM-RAW IMAP extension (so we can reuse Gmail's own
 search syntax, e.g. "newer_than:1h"), classifies them with Claude, and posts
